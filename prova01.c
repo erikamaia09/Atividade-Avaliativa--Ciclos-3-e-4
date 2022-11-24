@@ -12,9 +12,9 @@ int main(int argc, char** argv)
 {
     int i, vet[VETOR];
 
-     {/* o vetor guarda 10 valores apos feita a leitura do código, na ordem digitada. O vetor tem um tamanho 10, assim então, será lido 10 números(valores)
+     /* o vetor guarda 10 valores apos feita a leitura do código, na ordem digitada. O vetor tem um tamanho 10, assim então, será lido 10 números(valores)
      digitados pelo usuário, dessa maneira, enquanto o i, que é o contador de entradas dos valores, for menor ou igual ao tamanho do vetor
-     o laço  "for" irá continuar pedindo para o usuário digitar números que vão ficar salvos no vetor chamado VETOR.*/}
+     o laço  "for" irá continuar pedindo para o usuário digitar números que vão ficar salvos no vetor chamado VETOR.*/
     
     for(i = 0; i < VETOR; i++)
     {
@@ -26,8 +26,8 @@ int main(int argc, char** argv)
     
     insertion_sort(vet);
 
-    {/*Imprime os valores ordenados do vetor. O laço "for" é usado para fazer a impressão dos números,em ordem, do tamanho certo do
-    vetor que nessa caso é (10).Enquanto o contador i for menor que 10, ele é implementado em +1 assim passa para a próxima posição da sequência ordenada do vetor*/}
+    /*Imprime os valores ordenados do vetor. O laço "for" é usado para fazer a impressão dos números,em ordem, do tamanho certo do
+    vetor que nessa caso é (10).Enquanto o contador i for menor que 10, ele é implementado em +1 assim passa para a próxima posição da sequência ordenada do vetor*/
     
     printf("\nValores ordenados em ordem crescente:\n");
     
@@ -39,12 +39,12 @@ int main(int argc, char** argv)
     return 0;
 }
 
- {/* A função de Ordenação por Inserção. nessa função apresentada temos um contador,o contador i, uma variável que irá compor o vetor ordenado,j,e uma variável
+ /* A função de Ordenação por Inserção. nessa função apresentada temos um contador,o contador i, uma variável que irá compor o vetor ordenado,j,e uma variável
 temporária, que vai guardar o número ate que apareça um menor que ele. Para que ele  então,  passe a  integrar o vetor ordenado.
  O laço chamado "for" faz está comparação entre os valores digitados, assim sendo que o menor já vai para a posição crescente do vetor
 e o maior passa a ser temporário armazenado na variavel ' temporario' até que não tenha mais valor menor que esse(algum valor x). A função
  INSERTION SORT,ou ORDENAÇÃO POR INSERÇÃO é um método que irá percorrer um  um vetor de elementos da esquerda para a direita e da forma que ele vai avançando
-vai ordenando os elementos à esquerda.*/}
+vai ordenando os elementos à esquerda.*/
 
 void insertion_sort(int *a)
 {
